@@ -1,0 +1,84 @@
+Intrucciones basicas de ionic para la creacion de aplicaciones hibridas.
+
+creacion:
+
+1.ubicar la consola en el sitio de montaje
+2.colocar este codigo para la instalacion de ionic con cordova
+	sudo npm install -g ionic
+	npm install -g ionic //cordova sin cordova npm install -g ionic 
+3.colocar este codigo para la crecion de la carpeta
+	ionic start myapp tabs //con cordova ionic start myapp tabs --cordova //alguna version antigua ionic start myapp tabs --cordova --type ionic1 /*puede ser ionic1,2,3*/ 
+4.creacion de carpeta de recursos de android y ios
+	ionic cordova recourse --save 
+5.ejecutar 
+	ionic serve
+	ionic serve --lab
+
+
+construir tu app en apk o api:
+
+1.ubicar la carpeta para instalar unos pluyings
+2.colocar los codigo siguientes
+	ionic cordova platform add android  //o ios
+	ionic cordova build android --save //para aguardar algunas carpetas
+	ionic cordova build android --release //para aguardar la creacion de carpetas
+	ionic cordova build android --verbose //para ver si hay errores en la creacion de apk o api
+	ionic cordova build andorid // o ios para crear todo en general
+	ionic cordova prepare ios
+	ionic cordova build ios
+	ionic cordova emulate ios
+	ionic cordova emulate ios
+	ionic cordova run android
+	ionic cordova plugin rm cordova-plugin-console
+
+java:
+
+Tener java es lo mas importante se necesita la ultima version de java para que se vincule con cordova 4
+la creacion y permitir que todo pueda estar en el celular.
+
+
+/*este link se usa para ir al enlace de java e instalar el jdk*/
+
+https://www.java.com/es/download/
+
+ultima version
+
+variables de entorno 
+ 
+en el sitema 
+
+crear nuevo=   %JAVA_HOME%      Ubicacion de la version de java. C:\Program Files\Java\jdk1.8.0_201 programas de la computadora
+
+usuario = %JAVA_HOME%\bin;
+
+
+
+
+Descargar android studio:
+
+
+/*link de android studio enlace para instalar android */
+
+
+https://developer.android.com/studio
+
+ultima version 
+
+variables de entorno
+
+en el sistema para la creacion del appp y  construccion
+
+crear nuevo = %ANDROID_TOOLS% ubicacion de la version de tools sdk de android studio  C:\Program Files\Android Studio\Tools_____version______ programas de la computadora
+
+usuario = %ANDROID_TOOLS%\bin;
+
+
+
+
+
+
+
+
+
+
+
